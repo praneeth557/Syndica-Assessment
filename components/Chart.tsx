@@ -12,7 +12,8 @@ import {
 } from "recharts";
 import { GridData } from "./Grid";
 
-export default function Chart({ data }) {
+export default function Chart(props: any) {
+  const { data } = props;
   const formatTooltip = (payload: GridData) => {
     return `Amount: ${payload.Amount}, Group: ${payload.Group}, Description: ${payload.Description}`;
   };

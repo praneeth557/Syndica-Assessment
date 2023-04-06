@@ -8,7 +8,8 @@ export interface GridData {
   Description: string;
 }
 
-export default function Grid({ data }) {
+export default function Grid(props: any) {
+  const { data } = props;
   return (
     <div className={styles.grid}>
       <div className={styles.gridRow}>
